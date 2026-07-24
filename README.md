@@ -67,6 +67,8 @@ print(y)
 #Check for Duplicates
 df.duplicated()
 
+print(df['Age'].describe())
+
 #Detect Outliers
 scaler = MinMaxScaler()
 
@@ -102,6 +104,10 @@ print(len(X_test))
 
 ### Check for Duplicates
 <img width="423" height="581" alt="EX1 NN 5" src="https://github.com/user-attachments/assets/e95246e4-16ec-41f1-b262-0f0f2882336a" />
+
+### Detect outliers
+
+<img width="312" height="232" alt="EX1 NN 8" src="https://github.com/user-attachments/assets/368adeba-ae39-4e8e-929d-1ddf936fc9a7" />
 
 
 ### Normalized dataset
