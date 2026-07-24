@@ -100,7 +100,7 @@ print(len(X_test))
 ### Handling Missing values
 <img width="456" height="397" alt="EX1 NN 4" src="https://github.com/user-attachments/assets/9b64c716-7f35-4237-a138-14eb3ffa0796" />
 
-### #Check for Duplicates
+### Check for Duplicates
 <img width="423" height="581" alt="EX1 NN 5" src="https://github.com/user-attachments/assets/e95246e4-16ec-41f1-b262-0f0f2882336a" />
 
 
