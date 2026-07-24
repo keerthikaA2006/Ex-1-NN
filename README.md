@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: KEERTHIKA A</H3>
+<H3>ENTER YOUR REGISTER NO:212224220048</H3>
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>DATE 24-07-2026</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -37,11 +37,71 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+
+```python
+#import libraries
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+
+#Read the dataset from drive
+df = pd. read_csv( '/content/Churn_Modelling.csv' )
+print(df)
+
+#split the dataset
+X = df. iloc[ :, : -1] . values
+print (X)
+y = df . iloc[ :, -1] . values
+print(y)
+
+# Finding Missing Values
+print(df.isnull().sum())
+
+#Handling Missing values
+print(df.isnull() .sum() )
+y = df . iloc[ :, -1] . values
+print(y)
+
+#Check for Duplicates
+df.duplicated()
+
+#Detect Outliers
+scaler = MinMaxScaler()
+
+# Select only numerical columns for scaling
+numerical_cols = df.select_dtypes(include=['number'])
+df1 = pd.DataFrame(scaler.fit_transform(numerical_cols))
+print(df1)
+
+#splitting the data for training & Testing
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
+
+#'test_size=0.2' means 20% test data and 80% train data
+print(X_train)
+print(len(X_train))
+print(X_test)
+print(len(X_test))
+```
 
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+<img width="742" height="782" alt="EX1 NN 1" src="https://github.com/user-attachments/assets/03d83c5e-6faa-48f2-9b62-83291a79411e" />
+
+<img width="486" height="188" alt="EX1 NN-2" src="https://github.com/user-attachments/assets/a95c7ade-7431-4694-9faa-b0c07f036782" />
+
+<img width="352" height="336" alt="EX1 NN -3" src="https://github.com/user-attachments/assets/4b615d61-bda7-46ae-b278-90b7a85b42cc" />
+
+<img width="456" height="397" alt="EX1 NN 4" src="https://github.com/user-attachments/assets/9b64c716-7f35-4237-a138-14eb3ffa0796" />
+
+<img width="423" height="581" alt="EX1 NN 5" src="https://github.com/user-attachments/assets/e95246e4-16ec-41f1-b262-0f0f2882336a" />
+
+<img width="752" height="592" alt="EX1 NN 6" src="https://github.com/user-attachments/assets/e70e65cc-309a-4b71-8dfc-e226a8428aeb" />
+
+<img width="552" height="297" alt="EX1 NN 7" src="https://github.com/user-attachments/assets/64d84d7f-ac0e-4af8-b8fe-dc32cf4a8f34" />
+
+
 
 
 ## RESULT:
