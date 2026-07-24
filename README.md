@@ -87,18 +87,17 @@ print(len(X_test))
 
 
 ## OUTPUT:
+### Read the dataset
 <img width="742" height="782" alt="EX1 NN 1" src="https://github.com/user-attachments/assets/03d83c5e-6faa-48f2-9b62-83291a79411e" />
 
 
-
+### split the dataset
 <img width="486" height="188" alt="EX1 NN-2" src="https://github.com/user-attachments/assets/a95c7ade-7431-4694-9faa-b0c07f036782" />
 
-
-
+### Finding Missing Values
 <img width="352" height="336" alt="EX1 NN -3" src="https://github.com/user-attachments/assets/4b615d61-bda7-46ae-b278-90b7a85b42cc" />
 
-
-
+### Handling Missing values
 <img width="456" height="397" alt="EX1 NN 4" src="https://github.com/user-attachments/assets/9b64c716-7f35-4237-a138-14eb3ffa0796" />
 
 
@@ -106,11 +105,11 @@ print(len(X_test))
 <img width="423" height="581" alt="EX1 NN 5" src="https://github.com/user-attachments/assets/e95246e4-16ec-41f1-b262-0f0f2882336a" />
 
 
-
+### Normalized dataset
 <img width="752" height="592" alt="EX1 NN 6" src="https://github.com/user-attachments/assets/e70e65cc-309a-4b71-8dfc-e226a8428aeb" />
 
 
-
+### Print train and test data
 <img width="552" height="297" alt="EX1 NN 7" src="https://github.com/user-attachments/assets/64d84d7f-ac0e-4af8-b8fe-dc32cf4a8f34" />
 
 
